@@ -1,0 +1,76 @@
+html {
+min-height: 100vh;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  background-color: black;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 0.5rem black;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(151, 12, 40);
+  min-height: calc(100vh);
+}
+
+.Scoreboard {
+  margin: 1rem;
+  display: flex;
+  gap: 1rem;
+  background: linear-gradient(0, #3f87a6, #ebf8e1, #f69d3c);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.5rem black;
+}
+
+.ScoreValue {
+  text-align: center;
+}
+
+.CardGridWrapper {
+  display: grid;
+  grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  background-color:rgb(65, 65, 65);
+  border-radius: 2.5rem;
+}
+
+.CardWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: auto;
+  background-color:crimson;
+  color:blanchedalmond;
+  box-shadow: 0 0 0.5rem black;
+}
+
+.CardWrapper:active {
+  transform: scale(0.95);
+  box-shadow: 0 0 0.2rem black;
+}
+
+.CardTitle {
+  padding: 0.5rem;
+}
